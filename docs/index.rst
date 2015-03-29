@@ -216,7 +216,7 @@ Extract using the rules in a JSON file (from *parslepy*'s ``examples/`` director
             "url": "a.item @href",
         }]
     }
-    $ python run_parslepy.py --script examples/engadget_css.let.json --url http://www.engadget.com
+    $ python run_parslepy.py examples/engadget_css.let.json http://www.engadget.com
     {u'sections': [{u'title': u'News', u'url': '/'},
                 {u'title': u'Reviews', u'url': '/reviews/'},
                 {u'title': u'Features', u'url': '/features/'},

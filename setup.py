@@ -39,6 +39,7 @@ See https://github.com/redapple/parslepy/wiki#usage
         "lxml >= 2.3",
         "cssselect",
       ],
+      scripts=['run_parslepy.py'],
       classifiers = [
         'Topic :: Software Development :: Libraries :: Python Modules',
         'Topic :: Text Processing :: Markup :: HTML',
