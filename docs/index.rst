@@ -228,6 +228,20 @@ Extract using the rules in a JSON file (from *parslepy*'s ``examples/`` director
                 {u'title': u'Engadget Show', u'url': '/videos/show/'},
                 {u'title': u'Topics', u'url': '#nav-topics'}]}
 
+You can also pass a local HTML file instead::
+
+    $ wget http://www.engadget.com -O page.html
+    $ python run_parslepy.py examples/engadget_css.let.json page.html
+    {u'sections': [{u'title': u'News', u'url': '/'},
+                {u'title': u'Reviews', u'url': '/reviews/'},
+                {u'title': u'Features', u'url': '/features/'},
+                {u'title': u'Galleries', u'url': '/galleries/'},
+                {u'title': u'Videos', u'url': '/videos/'},
+                {u'title': u'Events', u'url': '/events/'},
+                {u'title': u'Podcasts',
+                    u'url': '/podcasts/the-engadget-podcast/'},
+                {u'title': u'Engadget Show', u'url': '/videos/show/'},
+                {u'title': u'Topics', u'url': '#nav-topics'}]}
 
 You may want to check out the other examples given in the ``examples/`` directory.
 You can run them using the ``run_parslepy.py`` script like shown above.
